@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewComer Autos LLC</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+    <style>
+        /* Estilos para ocultar secciones por defecto */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con el logo y nombre de la empresa -->
+    <header>
+        <h1>NewComer Autos LLC</h1>
+        <img src="Logo.png.png" alt="Logo de NewComer Autos LLC" width="140">
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio" onclick="showSection('inicio')">Inicio</a></li>
+            <li><a href="#inventario" onclick="showSection('inventario')">Inventario</a></li>
+            <li><a href="#contacto" onclick="showSection('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="section">
+        <h2>Bienvenidos a NewComer Autos</h2>
+        <p>Ofrecemos la mejor selección de carros usados de calidad.</p>
+        
+        <!-- Agrega el GIF aquí -->
+        <div class="celebration">
+            <img src="NiceCarCelebration.gif" alt="Persona festejando" width="300"> <!-- Ajusta el tamaño según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección de Inventario -->
+    <section id="inventario" class="section hidden">
+        <h2>Inventario de Vehículos</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="2010camrygray.jpg" alt="Toyota Camry" width="300" height="200">
+                <h3>Toyota Camry</h3>
+                <p>Año: 2010</p>
+                <p>Precio: $5,000</p>
+            </div>
+            <div class="car-card">
+                <img src="carro1.jpg" alt="Honda Civic" width="300" height="200">
+                <h3>Honda Civic</h3>
+                <p>Año: 2022</p>
+                <p>Precio: $23,000</p>
+            </div>
+            <div class="car-card">
+                <img src="carro2.jpg" alt="Nissan Altima" width="300" height="200">
+                <h3>Nissan Altima</h3>
+                <p>Año: 2020</p>
+                <p>Precio: $18,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con la información de contacto -->
+    <footer>
+        <p>Contactanos: +1 234 567 890 | Dirección: Calle 123, Ciudad</p>
+        <p>Síguenos en redes sociales: Facebook | Instagram</p>
+    </footer>
+
+    <!-- Script para manejar la visualización de secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Mostrar la sección seleccionada
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+
+        // Muestra la sección de inicio al cargar la página
+        showSection('inicio');
+    </script>
+</body>
+</html>

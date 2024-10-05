@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366; /* Color azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #003366;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #003366;
+}
+
+.car {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
